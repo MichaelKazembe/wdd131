@@ -15,12 +15,11 @@ body {
 .container {
   display: grid;
   grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "aside"
-    "footer";
-  grid-template-columns: 1fr;
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer";
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 10px;
 }
@@ -41,27 +40,6 @@ body {
   padding: 10px;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-/* nav ul li {
-  margin: 0 10px;
-} */
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-  color: #e7c30c;
-}
 
 footer {
   grid-area: footer;
