@@ -1,46 +1,70 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.content-wrapper {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main aside"
+    "footer footer footer";
+  grid-template-columns: 1fr 2fr 1fr; /* Adjusted column sizes */
+  grid-template-rows: auto auto 1fr auto; /* Adjusted row sizes */
+  height: 100vh; /* Ensure the grid takes the full viewport height */
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-/* HEADER */
-header > p {
+.site-header {
+  grid-area: header;
   background-color: #333;
-  color: #fff;
+  color: white;
   text-align: left;
-  padding: 10px 0;
-  left: 10px;
-}
-
-/* navBar */
-nav {
-  background-color: #0a0a0a;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  width: 100%;
+  padding: 10px;
 }
 
 .navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-area: nav;
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
-/* FOOTER */
-footer {
+.main-content {
+  grid-area: main;
+  background-color: #f4f4f4;
+  padding: 20px;
+  display: flex; /* Use flexbox for main content layout */
+}
+
+.main-div {
+  flex: 2; /* Take up two-thirds of the space */
+  padding: 20px;
+}
+
+.sidebar {
+  grid-area: aside;
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+
+.site-footer {
+  grid-area: footer;
   background-color: #333;
-  color: #fff;
+  color: white;
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
+  padding: 10px;
+}
+
+/* Additional styling for navigation links */
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
 }
