@@ -10,32 +10,67 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/base.css" />
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Link to the Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="site-header">
       <h1 class="site-title">WDD 131 – Dynamic Web Fundamentals</h1>
-      <nav class="site-navigation">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="https://linkedin.com/in/michael-kazembe" class="nav-link">LinkedIn</a></li>
-          <li class="nav-item"><a href="https://byupw.instructure.com/" class="nav-link">Canvas</a></li>
-          <li class="nav-item"><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p" class="nav-link">Scripture</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Final Project</a></li>
-        </ul>
-      </nav>
     </header>
+    <nav class="site-navigation">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="https://linkedin.com/in/michael-kazembe" class="nav-link"
+            >LinkedIn</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="https://byupw.instructure.com/" class="nav-link">Canvas</a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://www.churchofjesuschrist.org/study/scriptures/nt/2-cor/5?lang=eng&id=p17#p17"
+            class="nav-link"
+            >Scripture</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Final Project</a>
+        </li>
+      </ul>
+    </nav>
     <main class="main-content">
-
+      <!-- About Me -->
       <section class="card">
-        <h2 class="card-title">Card Title 1</h2>
-        <img src="images/image1.jpg" alt="Description of image 1" class="card-image" />
+        <h2 class="card-title">AboutMe</h2>
+        <img
+          src="images/michael-kazembe1.jpg"
+          alt="Description of image 1"
+          class="card-image-1"
+        />
         <p class="card-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate,
           officiis?
         </p>
       </section>
+      <!-- Web Dev Resources -->
       <section class="card">
-        <h2 class="card-title">Card Title 2</h2>
-        <img src="images/image2.jpg" alt="Description of image 2" class="card-image" />
+        <h2 class="card-title">Web Dev Resources</h2>
+        <img
+          src="images/image"
+          alt="Description of image 2"
+          class="card-image"
+        />
         <p class="card-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate,
           officiis?
@@ -47,7 +82,9 @@
       <p class="footer-text">
         &copy; <span id="currentdate"></span> Michael Kazembe | Malawi, Africa
       </p>
-      <p id="last-modified" class="footer-modified">Last Modified: <span id="last-modified-date"></span></p>
+      <p id="last-modified" class="footer-modified">
+        Last Modified: <span id="last-modified-date"></span>
+      </p>
     </footer>
     <script src="scripts/getdates.js" defer></script>
   </body>
