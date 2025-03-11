@@ -24,7 +24,18 @@ body {
   background-color: var(--base-color);
   color: white;
   text-align: center;
-  padding: 10px;
+
+}
+
+.site-title {
+  font-size: 2em;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.site-title > span {
+  color: var(--complementary-color-2);
+  font-size: 1.75rem;
 }
 
 /* NavBar */
@@ -166,8 +177,9 @@ figcaption {
 
 .resource-list {
   list-style-type: none;
-  padding: 0;
+  padding: 60px 30px;
   margin: auto;
+  border: solid var(--complementary-color-2) 1px;
 }
 
 .resource-item {
