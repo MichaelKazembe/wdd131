@@ -18,13 +18,13 @@ body {
   line-height: 1.6;
   font-size: 12px;
   margin: 10px;
+  max-width: 1200px;
 }
 
 .site-header {
   background-color: var(--base-color);
   color: white;
   text-align: center;
-
 }
 
 .site-title {
@@ -63,12 +63,7 @@ body {
 .nav-link {
   text-decoration: none;
   color: white;
-}
-
-.nav-link {
   position: relative;
-  text-decoration: none;
-  color: white;
 }
 
 .nav-link::after {
@@ -98,6 +93,8 @@ body {
   display: grid;
   gap: 0.25rem;
   grid-template-columns: 2fr 1fr;
+  max-width: 1200px; /* Ensure max-width is applied to the main element */
+  margin: 0 auto; /* Center the main content */
 }
 
 /* Cards */
