@@ -71,11 +71,17 @@ body {
   position: relative;
 }
 
-.nav-link:hover {
+nav a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+nav a:hover {
   color: var(--complementary-color-2);
 }
 
-.nav-link::after {
+nav a::after {
   content: "";
   position: absolute;
   width: 0;
@@ -87,14 +93,15 @@ body {
   transition: width 0.4s ease, left 0.4s ease;
 }
 
-.nav-link:hover::after {
+nav a:hover::after {
   width: 100%;
   left: 0;
 }
 
-.nav-link:active {
+nav a:active {
   color: var(--complementary-color-2);
 }
+
 
 /* MAIN CONTENT */
 
