@@ -65,6 +65,16 @@ body {
   position: relative;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--complementary-color-2);
+}
+
 .nav-link::after {
   content: "";
   position: absolute;
