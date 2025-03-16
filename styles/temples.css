@@ -110,11 +110,10 @@ nav a:active {
 .hamburger-menu {
   display: none;
   font-size: 1.5rem;
-  color: var(--pr);
   cursor: pointer;
   position: absolute;
-  right: 10px;
-  bottom: 30px;
+  right: 20px;
+  bottom: 25px;
   padding: auto 0;
   transform: translateY(-50%);
 }
@@ -160,7 +159,8 @@ nav a:active {
   }
 
   .site-header h1 {
-    padding-left: 0px;
+    padding-left: 10px;
+    font-size: 1.5rem;
   }
 }
 
@@ -213,6 +213,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
+  margin-top: 20px;
 }
 
 .footer-modified {
