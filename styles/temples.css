@@ -114,7 +114,7 @@ nav a:active {
   position: absolute;
   right: 20px;
   bottom: 25px;
-  padding: auto 0;
+  padding: 0;
   transform: translateY(-50%);
 }
 
