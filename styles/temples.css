@@ -54,6 +54,7 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 10px;
+  position: relative;
 }
 
 .nav-list {
@@ -104,6 +105,65 @@ nav a:hover::after {
 nav a:active {
   color: var(--primary-light);
 }
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--pr);
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  padding: auto 0;
+  transform: translateY(-50%);
+}
+
+.close-icon {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--primary-dark);
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transform: translateY(-50%);
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--primary-light);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .hamburger-menu.active {
+    display: none;
+  }
+
+  .close-icon.visible {
+    display: block;
+  }
+
+  .site-header h1 {
+    padding-left: 0px;
+  }
+}
+
 /* MAIN CONTENT */
 
 .main-content {
@@ -119,9 +179,9 @@ nav a:active {
 
 /* Gallery */
 .temples-gallery {
-    display: grid;
-    grid-template-columns: minmax(200px, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr);
+  gap: 20px;
 }
 /* Figure */
 
@@ -130,7 +190,14 @@ figure {
   padding: 0;
   box-shadow: var(--shadow-color) 2px 2px 5px;
 }
-
+/* Figure Image */
+.fig-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+}
 /* figcaption */
 
 .fig-caption {
@@ -138,7 +205,6 @@ figure {
   color: var(--primary-dark);
   padding: 5px;
 }
-
 
 /* FOOTER */
 footer {

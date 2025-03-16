@@ -13,3 +13,24 @@ currentYearElement.textContent = currentYear;
 
 // Set the last modified date in the footer's second paragraph
 lastModifiedElement.textContent = lastModified;
+
+// HAMBURGER MENU
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburgerMenu = document.getElementById('hamburgerMenu');
+  const navLinks = document.getElementById('navLinks');
+  const closeIcon = document.querySelector('.close-icon');
+
+  // Open menu
+  hamburgerMenu.addEventListener('click', () => {
+    navLinks.classList.add('active');
+    hamburgerMenu.classList.add('active');
+    closeIcon.classList.add('visible'); // Show close icon
+  });
+
+  // Close menu
+  closeIcon.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    hamburgerMenu.classList.remove('active');
+    closeIcon.classList.remove('visible'); // Hide close icon
+  });
+});
