@@ -7,14 +7,12 @@
   /* Neutral Colors */
   --neutral-color-1: #2c2c2c; /* Dark gray for text */
   --neutral-color-2: #f4f4f4; /* Light gray for backgrounds */
-  --neutral-color-3: #ffffff; /* White for clean areas */
 
   /* Accent Colors */
   --accent-color-2: #50e3c2; /* Mint green for decorative elements */
 
   /* Shadows and Borders */
   --shadow-color: rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  --border-color: #e0e0e0; /* Light gray for borders */
 }
 
 * {
@@ -157,11 +155,6 @@ nav a:active {
   .close-icon.visible {
     display: block;
   }
-
-  .site-header h1 {
-    padding-left: 10px;
-    font-size: 1.5rem;
-  }
 }
 
 /* MAIN CONTENT */
@@ -174,7 +167,13 @@ nav a:active {
 }
 .main-content h1 {
   font-size: 1.5rem;
-  padding: 20px;
+  /* padding: 20px; */
+}
+
+h2 {
+  font-size: 1.2rem;
+  padding: 10px;
+  color: var(--primary-dark);
 }
 
 /* Gallery */
@@ -201,7 +200,7 @@ figure {
 /* figcaption */
 
 .fig-caption {
-  background-color: var(--neutral-color-2);
+  background-color: var(--accent-color-1);
   color: var(--primary-dark);
   padding: 5px;
 }
