@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Place: Malawi</title>
+    <meta name="description" content="Malawi Statistics" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/place.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Malawi</h1>
+    </header>
+    <main class="main-content">
+      <picture>
+        <!-- Image for mobile devices -->
+        <source
+          srcset="image-mobile.webp"
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <!-- Image for desktop devices -->
+        <source
+          srcset="image-desktop.webp"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <!-- Fallback image for browsers that do not support WebP -->
+        <img src="images/lake-malawi.jpeg" alt="Description of the image" />
+      </picture>
+
+      <section class="data-section">
+        <h2>Data</h2>
+        <div class="data-list">
+          <ul>
+            <li class="data-item">
+              <span>Area:</span>
+              118,484 km2 (45,747 sq mi)
+            </li>
+            <li class="data-item">
+              <span>Population:</span>
+              21,240,689
+            </li>
+            <li class="data-item">
+              <span>Capital:</span>
+              Lilongwe
+            </li>
+            <li class="data-item">
+              <span>Languages:</span>
+              English, Chewa, Tumbuka, Yao
+            </li>
+            <li class="data-item">
+              <span>Currency:</span>
+              Malawi Kwacha (MWK)
+            </li>
+            <li class="data-item">
+              <span>Time Zone:</span>
+              UTC+2 (CAT)
+            </li>
+            <li class="data-item">
+              <span>Calling Code:</span>
+              +265
+            </li>
+            <li class="data-item">
+              <span>Internet TLD:</span>
+              .mw
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="weather-section">
+        <h2>Weather</h2>
+        <img
+          src="images/weather.svg"
+          alt="Weather Icon"
+          class="weather-icon"
+          width="50"
+          height="50"
+        />
+        <div class="data-list">
+          <ul>
+            <li class="data-item">
+              <span>Temperature:</span>
+              27 °C
+            </li>
+            <li class="data-item">
+              <span>Condition:</span>
+              Clear
+            </li>
+            <li class="data-item">
+              <span>Wind:</span>
+              3 km/h
+            </li>
+            <li class="data-item">
+              <span>Wind Chill:</span>
+              N/A
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p class="footer-text">
+        &copy;
+        <span id="currentdate"></span>
+        Michael Kazembe 🇲🇼 Malawi, Africa
+      </p>
+      <p id="last-modified" class="footer-modified">
+        Last Modified:
+        <span id="last-modified-date"></span>
+      </p>
+    </footer>
+    <script src="scripts/place.js" async defer></script>
+  </body>
+</html>
