@@ -12,9 +12,9 @@
 
 html,
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.6;
-  font-size: 12px;
+  font-size: 14px;
   background-color: var(--secondary-color);
 }
 
@@ -57,7 +57,7 @@ h1 {
 
   h2 {
     background-color: var(--secondary-color);
-    color: white;
+    color: black;
     position: absolute;
     top: 10px;
     padding-left: 2.5rem;
