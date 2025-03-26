@@ -19,15 +19,18 @@
       </p>
     </section>
     <script>
+      //  change the text content of the link
       const link = document.querySelector("a");
       link.textContent = "Michael is the best!";
       link.href = "https://linkedin.com/in/michael-kazembe";
 
+      //   add a paragraph to the section
       const sect = document.querySelector("section");
       const para = document.createElement("p");
       para.textContent = "We hope you enjoyed the ride.";
       sect.appendChild(para);
 
+      //   add a text node to the paragraph
       const text = document.createTextNode(
         " — the premier source for web development knowledge."
       );
@@ -35,8 +38,8 @@
       linkPara.appendChild(text);
 
       sect.appendChild(linkPara);
-      //   sect.appendChild(para.cloneNode(true));
 
+      //   remove the paragraph and link
       sect.removeChild(para);
       linkPara.parentNode.removeChild(linkPara);
 
