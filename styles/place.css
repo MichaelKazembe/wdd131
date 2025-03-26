@@ -68,6 +68,11 @@ h1 {
     text-align: left;
   }
 
+  .weather-section h2::after {
+    content: "⛅";
+    margin-left: 1rem;
+  }
+
   .data-list {
     margin-top: 5rem;
   }
