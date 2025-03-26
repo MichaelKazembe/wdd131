@@ -14,6 +14,7 @@
         margin-left: 20px;
         color: #666;
       }
+
     </style>
   </head>
   <body>
@@ -32,6 +33,7 @@
       const shoppingList = document.querySelector("ul");
       const input = document.querySelector("#item");
       const button = document.querySelector("#addButton");
+
 
       // Create a function for adding items to the list
       function addItem() {
@@ -59,6 +61,8 @@
         // Set the text content of the span and delete button
         span.textContent = itemText;
         deleteButton.textContent = "Delete";
+        deleteButton.style.backgroundColor = "red";
+        deleteButton.style.color = "white";
 
         // Append the list item to the shopping list
         shoppingList.appendChild(listItem);
@@ -74,6 +78,8 @@
 
       // Attach the addItem function to the button's click event
       button.addEventListener("click", addItem);
+
+   
     </script>
   </body>
 </html>
