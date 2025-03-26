@@ -1,7 +1,7 @@
 //  Initiate the variables
 const input = document.querySelector('#favhap');
 const button = document.querySelector('button');
-const addList = document.querySelector('ul');
+const list = document.querySelector('ul');
 
 // Create new list item and delete buttom
 const listItem = document.createElement('li');
@@ -17,4 +17,4 @@ deleteButton.textContent = '❌';
 listItem.appendChild(deleteButton);
 
 // Append the list item to the unordered list
-addList.appendChild(listItem);
+list.appendChild(listItem);
