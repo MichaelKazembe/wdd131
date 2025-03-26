@@ -12,6 +12,8 @@ listItem.textContent = input.value;
 
 // Populate the delete button with an ❌
 deleteButton.textContent = '❌';
+// Add aria-label to the delete button
+deleteButton.setAttribute('aria-label', 'delete item');
 
 // Append list item variable with delete button
 listItem.appendChild(deleteButton);
