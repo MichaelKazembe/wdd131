@@ -4,8 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple DOM example</title>
+    <style>
+      .highlight {
+        color: white;
+        background-color: black;
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+      }
+    </style>
   </head>
-
   <body>
     <section>
       <h2>A simple DOM example</h2>
@@ -40,16 +48,25 @@
       sect.appendChild(linkPara);
 
       //   remove the paragraph and link
-      sect.removeChild(para);
-      linkPara.parentNode.removeChild(linkPara);
+      //   sect.removeChild(para);
+      //   linkPara.parentNode.removeChild(linkPara);
 
-      const img = document.querySelector("img");
-      img.setAttribute(
-        "src",
-        "https://www.mozilla.org/media/img/logos/firefox/logo-quantum.9c5e96634f92.png"
-      );
+      //   const img = document.querySelector("img");
+      //   img.setAttribute(
+      //     "src",
+      //     "https://www.mozilla.org/media/img/logos/firefox/logo-quantum.9c5e96634f92.png"
+      //   );
 
-      img.parentNode.removeChild(img);
+      //   img.parentNode.removeChild(img);
+
+      //   Manipulating inline Styles
+      // para.style.color = "white";
+      // para.style.backgroundColor = "black";
+      // para.style.padding = "10px";
+      // para.style.width = "250px";
+      // para.style.textAlign = "center";
+
+      para.setAttribute("class", "highlight");
     </script>
   </body>
 </html>
