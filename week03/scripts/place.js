@@ -1,36 +1,38 @@
 // Function to calculate wind chill in Celsius
 function calculateWindChill(temperature, windSpeed) {
-    return 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
+  return (
+    13.12 +
+    0.6215 * temperature -
+    11.37 * Math.pow(windSpeed, 0.16) +
+    0.3965 * temperature * Math.pow(windSpeed, 0.16)
+  );
 }
 
 // Function to update the wind chill display
 function updateWindChill() {
-    const temperatureElement = document.querySelector('.data-item:nth-child(1)');
-    const windSpeedElement = document.querySelector('.data-item:nth-child(3)');
-    const windChillElement = document.querySelector('.data-item:nth-child(4)');
+  const temperatureElement = document.querySelector(".temperature");
+  const windSpeedElement = document.querySelector(".wind");
+  const windChillElement = document.querySelector(".chill");
 
-    // Extract temperature and wind speed values
-    const temperatureText = temperatureElement.textContent.split(' ')[1];
-    const windSpeedText = windSpeedElement.textContent.split(' ')[1];
+  // Extract temperature and wind speed values
+  const temperatureText = temperatureElement.textContent.split(" ")[1];
+  const windSpeedText = windSpeedElement.textContent.split(" ")[1];
 
-    // Parse values (assuming temperature is in °C and wind speed is in km/h)
-    const temperature = parseFloat(temperatureText);
-    const windSpeed = parseFloat(windSpeedText);
+  // Parse values (assuming temperature is in °C and wind speed is in km/h)
+  const temperature = parseFloat(temperatureText);
+  const windSpeed = parseFloat(windSpeedText);
 
-    // Check if wind chill calculation is viable
-    if (temperature <= 10 && windSpeed > 4.8) {
-        const windChill = calculateWindChill(temperature, windSpeed).toFixed(2);
-        windChillElement.textContent = `Wind Chill: ${windChill} °C`;
-    } else {
-        windChillElement.textContent = 'Wind Chill: N/A';
-    }
+  // Check if wind chill calculation is viable
+  if (temperature <= 10 && windSpeed > 4.8) {
+    const windChill = calculateWindChill(temperature, windSpeed).toFixed(2);
+    windChillElement.textContent = `Wind Chill: ${windChill} °C`;
+  } else {
+    windChillElement.textContent = "Wind Chill: N/A";
+  }
 }
 
 // Update wind chill when the page loads
 window.onload = updateWindChill;
-
-
-
 
 // Select the elements where the dates will be displayed
 const currentYearElement = document.querySelector("#currentdate");

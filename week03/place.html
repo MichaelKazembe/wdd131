@@ -16,18 +16,24 @@
       <picture>
         <!-- Image for mobile devices -->
         <source
-          srcset="image-mobile.webp"
+          srcset="images/mobile-malawi-zebras.webp"
           media="(max-width: 767px)"
           type="image/webp"
+          class="mobile-image"
         />
         <!-- Image for desktop devices -->
         <source
-          srcset="image-desktop.webp"
+          srcset="images/wide-malawi-zebras.webp"
           media="(min-width: 768px)"
           type="image/webp"
+          class="desktop-image"
         />
         <!-- Fallback image for browsers that do not support WebP -->
-        <img src="images/lake-malawi.jpeg" alt="Description of the image" />
+        <img
+          src="images/lake-malawi.jpeg"
+          alt="Description of the image"
+          class="fallback-image"
+        />
       </picture>
 
       <section class="data-section">
@@ -80,20 +86,20 @@
         />
         <div class="data-list">
           <ul>
-            <li class="data-item">
+            <li class="temperature">
               <span>Temperature:</span>
-              27 °C
+              10 °C
             </li>
-            <li class="data-item">
+            <li class="condition">
               <span>Condition:</span>
               Clear
             </li>
-            <li class="data-item">
+            <li class="wind">
               <span>Wind:</span>
-              3 km/h
+              5 km/h
             </li>
-            <li class="data-item">
-              <span>Wind Chill:</span>
+            <li class="chill">
+              <span class="wind-chill">Wind Chill:</span>
               N/A
             </li>
           </ul>
