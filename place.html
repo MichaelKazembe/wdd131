@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <title>Place: Malawi</title>
-    <meta name="description" content="Malawi Statistics" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles/place.css" />
+    <meta name="description" content="Malawi Statistics" >
+    <meta name="author" content="Michael Kazembe" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="stylesheet" href="styles/place.css">
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to the Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,600&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    >
   </head>
   <body>
     <header>
@@ -20,20 +33,20 @@
           media="(max-width: 767px)"
           type="image/webp"
           class="mobile-image"
-        />
+        >
         <!-- Image for desktop devices -->
         <source
           srcset="images/wide-malawi-zebras.webp"
           media="(min-width: 768px)"
           type="image/webp"
           class="desktop-image"
-        />
+        >
         <!-- Fallback image for browsers that do not support WebP -->
         <img
           src="images/malawi-zebras.webp"
           alt="Description of the image"
           class="fallback-image"
-        />
+        >
       </picture>
 
       <section class="data-section">
@@ -76,7 +89,10 @@
         </div>
       </section>
       <section class="weather-section">
-        <h2>Weather</h2>
+        <h2 class="weather-heading">
+          Weather
+          <span class="weather-emoticon">⛅</span>
+        </h2>
         <img
           src="images/weather.svg"
           alt="Weather Icon"

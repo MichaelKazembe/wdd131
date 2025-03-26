@@ -28,7 +28,66 @@ header {
 h1 {
   font-size: 2.5em;
 }
+/* WIDER VIEW */
 
+@media (min-width: 769px) {
+  .main-content {
+    position: relative;
+  }
+
+  section {
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 1rem 0;
+    text-align: center;
+    margin: 1rem;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .data-section {
+    position: absolute;
+    top: 10%;
+    left: 20px;
+  }
+
+
+  h2 {
+    background-color: var(--secondary-color);
+    color: white;
+    position: absolute;
+    top: 10px;
+    padding-left: 2.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    width: 100%;
+    left: -1.5rem;
+    text-align: left;
+  }
+
+  .data-list {
+    margin-top: 5rem;
+  }
+
+  .weather-section {
+    position: absolute;
+    bottom: 10%;
+    right: 20px;
+  }
+  .weather-emoticon {
+    display: inline; /* Show the emoticon for wider screens */
+    font-size: 1.5rem; /* Adjust the size of the emoticon */
+    margin-left: 10px; /* Add spacing next to the "Weather" heading */
+  }
+
+  .weather-icon {
+    display: none; /* Hide the SVG icon for wider screens */
+  }
+
+}
 
 section ul {
   text-decoration: none;
@@ -47,8 +106,6 @@ section ul {
   object-fit: cover;
 }
 
-
-
 /* MOBILE VIEW */
 
 @media screen and (max-width: 768px) {
@@ -58,11 +115,22 @@ section ul {
     padding: 1rem;
     text-align: center;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .weather-icon {
     width: 50px;
     height: 50px;
+  }
+
+  .weather-emoticon {
+    display: none; /* Hide the emoticon by default */
+  }
+  
+  .weather-icon {
+    display: block; /* Show the SVG icon by default */
   }
 
   .data-item {
@@ -84,6 +152,5 @@ footer {
 }
 
 .footer-modified {
-
   font-style: italic;
 }
