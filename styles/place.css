@@ -12,7 +12,7 @@
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Open Sans", sans-serif;
   line-height: 1.6;
   font-size: 14px;
   background-color: var(--secondary-color);
@@ -54,7 +54,6 @@ h1 {
     left: 20px;
   }
 
-
   h2 {
     background-color: var(--secondary-color);
     color: black;
@@ -91,7 +90,6 @@ h1 {
   .weather-icon {
     display: none; /* Hide the SVG icon for wider screens */
   }
-
 }
 
 section ul {
@@ -133,7 +131,7 @@ section ul {
   .weather-emoticon {
     display: none; /* Hide the emoticon by default */
   }
-  
+
   .weather-icon {
     display: block; /* Show the SVG icon by default */
   }
