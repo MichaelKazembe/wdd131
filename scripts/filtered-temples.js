@@ -100,7 +100,7 @@ const temples = [
     dedicated: "2019, March, 10",
     area: 40000,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-43514.jpg",
+      "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-36823.jpg"
   },
   {
     templeName: "Tokyo Japan",
