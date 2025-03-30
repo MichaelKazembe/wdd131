@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WDD 131 – Dynamic Web Fundamentals - Michael Kazembe</title>
+    <meta
+      name="description"
+      content="WDD 131 – Dynamic Web Fundamentals by Michael Kazembe. Learn about web development, HTML, CSS, JavaScript, and responsive design."
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michael Kazembe">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link
+      rel="stylesheet"
+      href="styles/filtered-temples-large.css"
+      media="(min-width: 769px)"
+    >
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to the Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100...900;1,100,...900&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="site-title">Temple Album</h1>
+      <nav class="site-nav">
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu" id="hamburgerMenu">&#9776;</div>
+        <!-- Close Icon -->
+        <div class="close-icon" id="closeIcon">&#10006;</div>
+        <!-- Navigation Links -->
+        <ul class="nav-list" id="navLinks">
+          <li class="nav-item">
+            <a href="temples.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Old</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">New</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Large</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Small</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <h1>Temple Gallery</h1>
+      <h2 class="subheading">Explore the Beauty of Temples Around the World</h2>
+      <section class="temples-gallery">
+        <!-- All temple figures have been removed -->
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p class="footer-text">
+        &copy;
+        <span id="currentdate"></span>
+        Michael Kazembe 🇲🇼 Malawi, Africa
+      </p>
+      <p id="last-modified" class="footer-modified">
+        Last Modified:
+        <span id="last-modified-date"></span>
+      </p>
+    </footer>
+    <script src="scripts/filtered-temples.js" defer></script>
+  </body>
+</html>
