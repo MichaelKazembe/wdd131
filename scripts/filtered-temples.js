@@ -200,4 +200,3 @@ document.querySelector(".nav-list").addEventListener("click", (event) => {
 
 // Display all temples by default
 showAllTemples();
-
