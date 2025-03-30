@@ -116,7 +116,7 @@ const temples = [
     dedicated: "1997, November, 2",
     area: 38000,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/vernal-utah-temple/vernal-utah-temple-40521.jpg",
+      "https://churchofjesuschristtemples.org/assets/img/temples/vernal-utah-temple/vernal-utah-temple-15070.jpg"
   },
 ];
 
