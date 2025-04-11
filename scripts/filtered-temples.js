@@ -119,30 +119,64 @@ const temples = [
       "https://churchofjesuschristtemples.org/assets/img/temples/vernal-utah-temple/vernal-utah-temple-15070.jpg"
   },
 ];
-
 // Select the section where the temples will be displayed
 const templesSection = document.querySelector(".temples-gallery");
 
-// Create a function to display the temples
+// Create a function to display the temples dynamically
 function displayTemples(temples) {
-  let templeHtml = "";
+  // Clear any existing content in the section
+  templesSection.textContent = "";
+
+  // Loop through the temples array and create elements for each temple
   temples.forEach((temple) => {
-    templeHtml += `
-      <figure class="temple">
-        <img src="${temple.imageUrl}" alt="${
-      temple.templeName
-    }" class="fig-image" loading="lazy">
-        <figcaption>
-          <h3>${temple.templeName}</h3>
-          <p><span>LOCATION:</span> ${temple.location}</p>
-          <p><span>DEDICATED:</span> ${temple.dedicated}</p>
-          <p><span>AREA:</span> ${temple.area.toLocaleString()} SQUARE FEET</p>
-        </figcaption>
-      </figure>
-    `;
+    // Create the figure element
+    const figure = document.createElement("figure");
+    figure.classList.add("temple");
+
+    // Create the image element
+    const img = document.createElement("img");
+    img.src = temple.imageUrl;
+    img.alt = temple.templeName;
+    img.classList.add("fig-image");
+    img.loading = "lazy";
+
+    // Create the figcaption element
+    const figcaption = document.createElement("figcaption");
+
+    // Create the h3 element for the temple name
+    const h3 = document.createElement("h3");
+    h3.textContent = temple.templeName;
+
+    // Create the location paragraph
+    const locationP = document.createElement("p");
+    locationP.innerHTML = `<span>LOCATION:</span> ${temple.location}`;
+
+    // Create the dedicated paragraph
+    const dedicatedP = document.createElement("p");
+    dedicatedP.innerHTML = `<span>DEDICATED:</span> ${temple.dedicated}`;
+
+    // Create the area paragraph
+    const areaP = document.createElement("p");
+    areaP.innerHTML = `<span>AREA:</span> ${temple.area.toLocaleString()} SQUARE FEET`;
+
+    // Append all elements to the figcaption
+    figcaption.appendChild(h3);
+    figcaption.appendChild(locationP);
+    figcaption.appendChild(dedicatedP);
+    figcaption.appendChild(areaP);
+
+    // Append the image and figcaption to the figure
+    figure.appendChild(img);
+    figure.appendChild(figcaption);
+
+    // Append the figure to the temples section
+    templesSection.appendChild(figure);
   });
-  templesSection.innerHTML = templeHtml;
 }
+
+// Display all temples by default
+displayTemples(temples);
+
 
 // Filter Temples
 
