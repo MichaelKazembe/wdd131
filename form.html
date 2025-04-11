@@ -8,20 +8,16 @@
       name="description"
       content="WDD 131 – Dynamic Web Fundamentals by Michael Kazembe. Learn about web development, HTML, CSS, JavaScript, and responsive design."
     >
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Michael Kazembe">
-    <link rel="stylesheet" href="styles/form.css">
-    <link
-      rel="stylesheet"
-      href="styles/form-large.css"
-      media="(min-width: 769px)"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="author" content="Michael Kazembe" >
+    <link rel="stylesheet" href="styles/form.css" >
+
     <!-- Preconnect to Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <!-- Link to the Fonts -->
-    <link 
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
       rel="stylesheet"
     >
   </head>
@@ -30,60 +26,118 @@
       <h1 class="site-title">Product Review</h1>
     </header>
     <main class="main-content">
-        <!-- FORM -->
-        <form id="product-review-form" class="form" action="review.html" method="get">
-            <!-- Product Name -->
-            <label for="product-name">Product Name</label><br>
-            <select id="product-name" name="product-name" required>
-                <option value="" disabled selected>Select a product</option>
-            </select>
-            <br>
-            <hr>
-            <!-- Overall Rating -->
-            <label>Overall Rating</label>
-            <div class="stars">
-              <input type="radio" id="fivestar" name="stars" value="5" required>
-              <label for="fivestar" title="5 stars"></label>
-              <input type="radio" id="fourstar" name="stars" value="4" required>
-              <label for="fourstar" title="4 stars"></label>
-              <input type="radio" id="threestar" name="stars" value="3" required>
-              <label for="threestar" title="3 stars"></label>
-              <input type="radio" id="twostar" name="stars" value="2" required>
-              <label for="twostar" title="2 stars"></label>
-              <input type="radio" id="onestar" name="stars" value="1" required>
-              <label for="onestar" title="1 star"></label>
-            </div>
-            <br>
-            <hr>
-            <!-- Date of Installation -->
-            <label for="Installation-date">Date of Installation</label><br>
-            <input type="date" id="Installation-date" name="Installation-date" required>
-            <br>
-            <hr>
-            <!-- Useful Features -->
-            <label>Which features did you find useful in the product?<span>(Check All that Apply)</span></label><br>
-            <input type="checkbox" id="durability" name="useful-features" value="Durability">
-            <label for="durability">Durability</label><br>
-            <input type="checkbox" id="ease-of-use" name="useful-features" value="Ease of Use">
-            <label for="ease-of-use">Ease of Use</label><br>
-            <input type="checkbox" id="performance" name="useful-features" value="Performance">
-            <label for="performance">Performance</label><br>
-            <input type="checkbox" id="design" name="useful-features" value="Design">
-            <label for="design">Design</label>
-            <br>
-            <hr>
-            <!-- Written Review -->
-            <label for="written-review">Written Review<span>(Optional)</span></label><br>
-            <textarea name="written-review" id="written-review" cols="38" rows="5" placeholder="Write your review"></textarea>
-            <br>
-            <hr>
-            <!-- User Name -->
-            <label for="user-name">Your Name<span>(Optional)</span></label>
-            <input type="text" name="user-name" id="user-name" placeholder="Enter Your Name">
-            <br>
-            <!-- Form Submission Button -->
-            <input type="submit" id="submit" value="Post Review">
-        </form>
+      <!-- FORM -->
+      <form
+        id="product-review-form"
+        class="form"
+        action="review.html"
+        method="get"
+      >
+        <!-- Product Name -->
+        <label for="product-name">Product Name</label>
+        <br>
+        <select id="product-name" name="product-name" required>
+          <option value="" disabled selected>Select a product</option>
+        </select>
+        <br>
+        <hr>
+        <!-- Overall Rating -->
+        <fieldset>
+          <legend>Overall Rating</legend>
+          <div class="stars">
+            <input type="radio" id="fivestar" name="stars" value="5" required >
+            <label for="fivestar" title="5 stars">5 Stars</label>
+            <input type="radio" id="fourstar" name="stars" value="4" required >
+            <label for="fourstar" title="4 stars">4 Stars</label>
+            <input type="radio" id="threestar" name="stars" value="3" required >
+            <label for="threestar" title="3 stars">3 Stars</label>
+            <input type="radio" id="twostar" name="stars" value="2" required >
+            <label for="twostar" title="2 stars">2 Stars</label>
+            <input type="radio" id="onestar" name="stars" value="1" required >
+            <label for="onestar" title="1 star">1 Star</label>
+          </div>
+        </fieldset>
+        <br>
+        <hr>
+        <!-- Date of Installation -->
+        <label for="installation-date">Date of Installation</label>
+        <br>
+        <input
+          type="date"
+          id="installation-date"
+          name="installation-date"
+          required
+        >
+        <br>
+        <hr>
+        <!-- Useful Features -->
+        <fieldset>
+          <legend>Which features did you find useful in the product?</legend>
+          <input
+            type="checkbox"
+            id="durability"
+            name="useful-features"
+            value="Durability"
+          >
+          <label for="durability">Durability</label>
+          <br>
+          <input
+            type="checkbox"
+            id="ease-of-use"
+            name="useful-features"
+            value="Ease of Use"
+          >
+          <label for="ease-of-use">Ease of Use</label>
+          <br>
+          <input
+            type="checkbox"
+            id="performance"
+            name="useful-features"
+            value="Performance"
+          >
+          <label for="performance">Performance</label>
+          <br>
+          <input
+            type="checkbox"
+            id="design"
+            name="useful-features"
+            value="Design"
+          >
+          <label for="design">Design</label>
+        </fieldset>
+        <br>
+        <hr>
+        <!-- Written Review -->
+        <label for="written-review">
+          Written Review
+          <span>(Optional)</span>
+        </label>
+        <br>
+        <textarea
+          name="written-review"
+          id="written-review"
+          cols="38"
+          rows="5"
+          placeholder="Write your review"
+        ></textarea>
+        <br>
+        <hr>
+        <!-- User Name -->
+        <label for="user-name">
+          Your Name
+          <span>(Optional)</span>
+        </label>
+        <br>
+        <input
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="Enter Your Name"
+        >
+        <br>
+        <!-- Form Submission Button -->
+        <input type="submit" id="submit" value="Post Review" >
+      </form>
     </main>
     <footer class="site-footer">
       <p class="footer-text">
