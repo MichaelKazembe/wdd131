@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Review Page</title>
-</head>
-<body>
-  <header>
-    <h1>Thank You for Your Review!</h1>
-  </header>
-  <main>
-    <p id="reviewCountDisplay">Reviews Completed: 0</p>
-  </main>
-  <footer>
-  </footer>
-  <script src="scripts/form.js"> </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Page</title>
+    <link rel="stylesheet" href="styles/form.css" />
+  </head>
+  <body>
+    <header></header>
+    <main class="review-page">
+      <div class="thank-you-message">
+        <h1>Thank You for Your Review!</h1>
+      <p id="reviewCountDisplay">Reviews Completed: 0</p>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p class="footer-text">
+        &copy;
+        <span id="currentdate"></span>
+        Michael Kazembe 🇲🇼 Malawi, Africa
+      </p>
+      <p id="last-modified" class="footer-modified">
+        Last Modified:
+        <span id="last-modified-date"></span>
+      </p>
+    </footer>
+    <script src="scripts/form.js"></script>
+  </body>
 </html>

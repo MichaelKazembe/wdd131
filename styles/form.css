@@ -5,9 +5,9 @@
   --accent-color: #fbbc05; /* Vibrant yellow for highlights */
   --text-color: #333333; /* Dark gray for text */
   --error-color: #e63946; /* Red for error messages */
-  --success-color: #4caf50; /* Green for success messages */
-  --border-color: #d1d5db; /* Neutral gray for borders */
-  --hover-color: #2563eb; /* Darker blue for hover effects */
+  --success-color: #4caf50;
+  --border-color: #d1d5db;
+  --hover-color: #2563eb;
 }
 
 * {
@@ -21,7 +21,6 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   font-size: 12px;
-  margin: 10px;
   color: var(--text-color);
 }
 
@@ -41,32 +40,41 @@ body {
 /* FORM */
 
 form {
-  display: grid;
-  margin: 20px auto;
+  margin: 60px 20px;
   padding: 20px;
   background-color: var(--secondary-color);
   border: 2px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-/* Labels and Inputs */
+/* Labels*/
 label {
   font-size: 1.2em;
+  display: inline;
   font-weight: 600;
   color: var(--text-color);
-  margin-bottom: 5px; /* Add spacing below the label */
-  display: block; /* Ensure the label is on its own line */
+  padding-bottom: 20px;
 }
 
-input,
+
+#product-name,
+#Installation-date,
 textarea,
-select {
-  margin-bottom: 2px; /* Add spacing below each input */
-  padding: 10px; /* Add padding for better usability */
+#user-name{
+  margin: 4px auto;
+  padding: 10px;
   border: 1px solid var(--border-color);
-  border-radius: 4px; /* Add rounded corners */
+  border-radius: 4px;
   font-size: 1em;
-  width: 100%; /* Ensure inputs take up the full width of the form */
-  box-sizing: border-box; /* Include padding and border in width */
+  width: 100%;
+ 
 }
+
+input[type="checkbox"] {
+    padding-right: 10px;
+}
+
+
 /* Placeholder */
 input::placeholder,
 textarea::placeholder {
@@ -80,66 +88,69 @@ textarea::placeholder {
 
 /* Submit */
 input[type="submit"] {
+  margin: 40px auto;
   background-color: var(--primary-color);
   color: white;
   border: none;
   padding: 10px 20px;
-  font-size: 1em;
+  font-size: 1.25em;
   cursor: pointer;
-  padding: 10px;
-  font-size: larger;
+  width: 100%;
 }
 
 input[type="submit"]:hover {
   background-color: var(--hover-color);
 }
 
-span {
+label > span {
   font-size: xx-small;
   font-style: italic;
 }
 
 /* stars */
 input[type="radio"] {
-	display: none;
-	position: relative;
-	caret-color: rgba(0, 0, 0, 0);
+  display: none;
+  position: relative;
+  caret-color: rgba(0, 0, 0, 0);
 }
 
 .stars {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: left;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  padding-top: 15px;
 }
 
 .stars > label {
-	color: gold;
-	width: 30px;
-	height: 30px;
-	font-size: 2rem;
-	margin-left: 5px;
-	display: flex;
-	align-items: center;
-	caret-color: rgba(0, 0, 0, 0); 
+  color: gold;
+  width: 30px;
+  height: 30px;
+  font-size: 2rem;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  caret-color: rgba(0, 0, 0, 0);
 }
 
 .stars > label:hover {
-	color: #000;
+  color: #000;
 }
 
 .stars > label::before {
-	content: "\2606";
+  content: "\2606";
 }
 
 .stars input:checked ~ label::before {
-	content: "\2605";
+  content: "\2605";
 }
 
 hr {
   border: none;
   height: 1px;
   background-color: var(--border-color);
-  margin: 20px 0; /* Add spacing above and below the line */
+  margin: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* LARGER SCREENS */
@@ -150,8 +161,24 @@ hr {
     padding: 20px; /* Add padding for a balanced layout */
   }
 }
+/* REVIEW PAGE */
+.review-page {
+  text-align: center;
+  height: 100vh;
+}
+.review-page h1 {
+  font-size: 2.5em;
+  margin: 20px 0;
+  color: var(--primary-color);
+}
+.review-page p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
 
-
+.thank-you-message {
+  margin: 50px 0;
+}
 
 /* FOOTER */
 footer {

@@ -28,6 +28,19 @@ const products = [
   },
 ];
 
+// Dynamically populate the product dropdown
+document.addEventListener("DOMContentLoaded", () => {
+  const productSelect = document.getElementById("product-name");
+
+  // Loop through the products array and create <option> elements
+  products.forEach((product) => {
+    const option = document.createElement("option");
+    option.value = product.id;
+    option.textContent = `${product.name} (Rating: ${product.averagerating})`;
+    productSelect.appendChild(option);
+  });
+});
+
 // Function to increment the review counter
 function incrementReviewCounter() {
   // Check if the counter exists in localStorage
