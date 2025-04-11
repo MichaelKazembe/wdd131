@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FORMS - WDD 131 – Dynamic Web Fundamentals - Michael Kazembe</title>
+    <meta
+      name="description"
+      content="WDD 131 – Dynamic Web Fundamentals by Michael Kazembe. Learn about web development, HTML, CSS, JavaScript, and responsive design."
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michael Kazembe">
+    <link rel="stylesheet" href="styles/form.css">
+    <link
+      rel="stylesheet"
+      href="styles/form-large.css"
+      media="(min-width: 769px)"
+    >
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to the Fonts -->
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" 
+      rel="stylesheet"
+    >
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="site-title">Product Review</h1>
+    </header>
+    <main class="main-content">
+        <!-- FORM -->
+        <form id="product-review-form" class="form" action="review.html" method="get">
+            <!-- Product Name -->
+            <label for="product-name">Product Name</label><br>
+            <select id="product-name" name="product-name" required>
+                <option value="" disabled selected>Select a product</option>
+                <option value="product1">Product 1</option>
+                <option value="product2">Product 2</option>
+                <option value="product3">Product 3</option>
+                <option value="product4">Product 4</option>
+            </select>
+            <br>
+            <!-- Overall Rating -->
+             <label for="overall-rating">Overall Rating</label><br>
+            <input type="radio" id="rating1" name="overall-rating" value="1" required>
+            <label for="rating1">1</label>
+            <input type="radio" id="rating2" name="overall-rating" value="2">
+            <label for="rating2">2</label>
+            <input type="radio" id="rating3" name="overall-rating" value="3">
+            <label for="rating3">3</label>
+            <input type="radio" id="rating4" name="overall-rating" value="4">
+            <label for="rating4">4</label>
+            <input type="radio" id="rating5" name="overall-rating" value="5">
+            <label for="rating5">5</label>
+            <br>
+            <!-- Date of Installation -->
+             <label for="Installation-date">Date of Installation</label><br>
+            <input type="date" id="Installation-date" name="Installation-date" required>
+            <br>
+            <!-- Useful Features -->
+            <label for="useful-features">Which features did you find useful in the product?<span>(Check All that Apply)</span></label><br>
+            <input type="checkbox" id="durability" name="useful-features" value="Durability">
+            <label for="durability">Durability</label>
+            <input type="checkbox" id="ease-of-use" name="useful-features" value="Ease of Use">  
+            <label for="ease-of-use">Ease of Use</label>
+            <input type="checkbox" id="performance" name="useful-features" value="Performance">
+            <label for="performance">Performance</label>
+            <input type="checkbox" id="design" name="useful-features" value="Design">
+            <label for="design">Design</label>
+            <br>
+            <!-- Written Review -->
+             <label for="written-review" optional>Written Review<span>(Optional)</span></label><br>
+             <textarea name="written-review" id="written-review" cols="38" rows="5" placeholder="Write your review"></textarea>
+             <br>
+             <!-- User Name -->
+              <label for="user-name">Your Name<span>(Optional)</span></label><br>
+              <input type="text" name="user-name" id="user-name" placeholder="Enter Your Name">
+              <br>
+              <!-- Form Submission Button -->
+                <input type="submit" id="submit" value="Post Review">
+        </form>
+    </main>
+    <footer class="site-footer">
+      <p class="footer-text">
+        &copy;
+        <span id="currentdate"></span>
+        Michael Kazembe 🇲🇼 Malawi, Africa
+      </p>
+      <p id="last-modified" class="footer-modified">
+        Last Modified:
+        <span id="last-modified-date"></span>
+      </p>
+    </footer>
+    <script src="scripts/form.js" defer></script>
+  </body>
+</html>
