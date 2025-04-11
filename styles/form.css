@@ -135,6 +135,13 @@ input[type="radio"] {
 	content: "\2605";
 }
 
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 20px 0; /* Add spacing above and below the line */
+}
+
 /* LARGER SCREENS */
 @media (min-width: 769px) {
   form {
