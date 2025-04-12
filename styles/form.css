@@ -56,6 +56,39 @@ label {
   padding-bottom: 20px;
 }
 
+/* Star Rating */
+.stars {
+  display: flex;
+  flex-direction: row-reverse; /* Reverse the order for proper star alignment */
+  justify-content: flex-end; /* Align stars to the left */
+  gap: 5px; /* Add spacing between stars */
+}
+
+.stars input[type="radio"] {
+  display: none; /* Hide the radio buttons */
+}
+
+.stars label {
+  font-size: 2rem; /* Adjust size of the stars */
+  color: var(--border-color); /* Default star color */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth transition for hover and selection */
+}
+
+.stars label::before {
+  content: "☆"; /* Unicode for an empty star */
+}
+
+.stars input[type="radio"]:checked ~ label::before {
+  content: "★"; /* Unicode for a filled star */
+  color: var(--accent-color); /* Highlight stars when selected */
+}
+
+.stars label:hover,
+.stars label:hover ~ label {
+  color: var(--hover-color); /* Highlight stars on hover */
+}
+
 
 #product-name,
 #Installation-date,
@@ -107,42 +140,7 @@ label > span {
   font-style: italic;
 }
 
-/* stars */
-input[type="radio"] {
-  display: none;
-  position: relative;
-  caret-color: rgba(0, 0, 0, 0);
-}
 
-.stars {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: left;
-  padding-top: 15px;
-}
-
-.stars > label {
-  color: gold;
-  width: 30px;
-  height: 30px;
-  font-size: 2rem;
-  margin-left: 5px;
-  display: flex;
-  align-items: center;
-  caret-color: rgba(0, 0, 0, 0);
-}
-
-.stars > label:hover {
-  color: #000;
-}
-
-.stars > label::before {
-  content: "\2606";
-}
-
-.stars input:checked ~ label::before {
-  content: "\2605";
-}
 
 hr {
   border: none;

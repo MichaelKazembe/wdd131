@@ -50,7 +50,7 @@ function incrementReviewCounter() {
   if (!reviewCount) {
     reviewCount = 0;
   } else {
-    reviewCount = parseInt(reviewCount);
+    reviewCount = parseInt(reviewCount, 10); // Ensure it's parsed as an integer
   }
 
   // Increment the counter
@@ -60,15 +60,31 @@ function incrementReviewCounter() {
   localStorage.setItem("reviewCounter", reviewCount);
 
   // Display the updated counter to the user
-  document.getElementById(
-    "reviewCountDisplay"
-  ).textContent = `Reviews Completed: ${reviewCount}`;
+  const reviewCountDisplay = document.getElementById("reviewCountDisplay");
+  if (reviewCountDisplay) {
+    reviewCountDisplay.textContent = `Reviews Completed: ${reviewCount}`;
+  }
 }
 
-// Call the function when the page loads
+// Ensure the function is only called once when the page loads
 document.addEventListener("DOMContentLoaded", () => {
-  incrementReviewCounter();
+  // Display the current review count without incrementing
+  const reviewCount = localStorage.getItem("reviewCounter") || 0;
+  const reviewCountDisplay = document.getElementById("reviewCountDisplay");
+  if (reviewCountDisplay) {
+    reviewCountDisplay.textContent = `Reviews Completed: ${reviewCount}`;
+  }
+
+  // Increment the counter when the form is submitted
+  const form = document.getElementById("product-review-form");
+  if (form) {
+    form.addEventListener("submit", (event) => {
+      incrementReviewCounter();
+    });
+  }
 });
+
+// D
 
 // Select the elements where the dates will be displayed
 const currentYearElement = document.querySelector("#currentdate");
