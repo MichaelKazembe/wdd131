@@ -1,0 +1,166 @@
+:root {
+  /* Colors */
+  --primary-color: #477104;
+  --secondary-color: #ecb62c;
+  --tertiary-color: #f9f9f9;
+  --text-color: #333;
+  --background-color: #f4f4f4;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Fonts */
+  --font-family-headings: "Barlow Condensed", sans-serif; 
+  --font-family-body: "Montserrat", sans-serif;
+  --font-size: 14px;
+  --font-size-small: 10px;
+  --font-size-large: 18px;
+
+  /* Button */
+  --button-primary: var(--secondary-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-family-body);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 20px auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+section {
+  background-color: var(--tertiary-color);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--secondary-color);
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 1rem;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-headings); 
+  color: var(--primary-color);
+  padding: 0.5rem;
+}
+
+h2 > span {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.75em;
+}
+
+p {
+  font-family: var(--font-family-body);
+  color: var(--text-color);
+  padding: 0.5rem;
+}
+
+.wireframe {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.wireframe div {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 0.5rem;
+  flex: 1;
+  min-width: 300px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wireframe img {
+  height: auto;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin: 1rem auto;
+}
+
+/*----- BUTTONS -----*/
+
+/* Primary */
+.primary-button {
+  background-color: var(--button-primary);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--button-primary);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.primary-button:hover {
+  background-color: var(--text-color);
+  color: var(--button-primary);
+}
+
+.primary-button:active {
+  background-color: #b58c00;
+}
+
+.primary-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--secondary-color);
+}
+
+/* Secondary Button */
+.secondary-button {
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.secondary-button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.secondary-button:active {
+  background-color: #3b5e00;
+}
+
+footer {
+  background-color: var(--text-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
