@@ -2,9 +2,9 @@
   /* Colors */
   --primary-color: #2d89ef;
   --secondary-color: #f3f4f6;
-  --accent-color: #fbbc05; 
-  --text-color: #333333; 
-  --error-color: #e63946; 
+  --accent-color: #fbbc05;
+  --text-color: #333333;
+  --error-color: #e63946;
   --success-color: #4caf50;
   --border-color: #d1d5db;
   --hover-color: #2563eb;
@@ -47,6 +47,11 @@ form {
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+form > * {
+  margin-bottom: 20px;
+}
+
 /* Labels*/
 label {
   font-size: 1.2em;
@@ -54,14 +59,15 @@ label {
   font-weight: 600;
   color: var(--text-color);
   padding-bottom: 20px;
+  gap: 10px;
 }
 
 /* Star Rating */
 .stars {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-end; 
-  gap: 5px; 
+  justify-content: flex-end;
+  gap: 5px;
 }
 
 .stars input[type="radio"] {
@@ -69,44 +75,49 @@ label {
 }
 
 .stars label {
-  font-size: 2rem; 
-  color: var(--text-color); 
+  font-size: 2rem;
+  color: var(--text-color);
   cursor: pointer;
-  transition: color 0.3s ease; 
+  transition: color 0.3s ease;
 }
 
 .stars label::before {
-  content: "☆"; 
+  content: "☆";
 }
 
 .stars input[type="radio"]:checked ~ label::before {
-  content: "★"; 
-  color: var(--accent-color); 
+  content: "★";
+  color: var(--accent-color);
 }
 
 .stars label:hover,
 .stars label:hover ~ label {
-  color: var(--hover-color); 
+  color: var(--hover-color);
 }
-
 
 #product-name,
 #Installation-date,
 textarea,
-#user-name{
+#user-name {
   margin: 4px auto;
   padding: 10px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
   font-size: 1em;
   width: 100%;
- 
 }
 
-input[type="checkbox"] {
+/* input[type="checkbox"] {
     padding-right: 10px;
-}
+} */
 
+/* Ensure all touch targets are at least 24px */
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  padding-right: 10px;
+  cursor: pointer;
+}
 
 /* Placeholder */
 input::placeholder,
@@ -119,14 +130,16 @@ textarea::placeholder {
   padding: 5px;
 }
 
+
 /* Submit */
 input[type="submit"] {
   margin: 40px auto;
   background-color: var(--primary-color);
-  color: white;
+  color: black;
   border: none;
   padding: 10px 20px;
   font-size: 1.25em;
+  font-weight: 600;
   cursor: pointer;
   width: 100%;
 }
@@ -140,8 +153,6 @@ label > span {
   font-style: italic;
 }
 
-
-
 hr {
   border: none;
   height: 1px;
@@ -154,8 +165,8 @@ hr {
 /* LARGER SCREENS */
 @media (min-width: 769px) {
   form {
-    max-width: 600px; 
-    margin: 40px auto; 
+    max-width: 600px;
+    margin: 40px auto;
     padding: 20px;
   }
 }
