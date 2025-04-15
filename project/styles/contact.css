@@ -1,0 +1,100 @@
+/* ------------------ GET IN TOUCH SECTION --------------------*/
+
+/*  */
+.get-in-touch-contact {
+    padding: 20px;
+  }
+
+  .get-in-touch-contact > p {
+    text-align: center;
+  }
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 1rem;
+  margin: 20px auto;
+
+}
+
+/* Contact Information */
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 1rem;
+  text-align: left;
+}
+
+.contact,
+.follow {
+  background-color: white;
+  padding: 20px;
+  width: 350px;
+  border: 2px solid var(--accent-color-1);
+  border-radius: 8px;
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 20px;
+}
+
+.social-media {
+    color: var(--text-color);
+
+}
+
+
+
+/* Form Container */
+.contact-form {
+  background-color: white;
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  border: 2px solid var(--accent-color-1);
+  border-radius: 8px;
+}
+
+/* Labels */
+.contact-form label {
+  display: block;
+  font-family: var(--font-family-body);
+  font-size: var(--paragraph-size);
+  color: var(--text-color);
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: 400;
+}
+/* Input Fields */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 10px;
+  font-family: var(--font-family-body);
+  font-size: var(--paragraph-size);
+  border: 1px solid var(--accent-color-2);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Textarea */
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Submit Button */
+.contact-form input[type="submit"] {
+  width: 100%;
+}

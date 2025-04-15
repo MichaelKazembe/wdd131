@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Malawi Delicacies</title>
     <meta
-    name="description"
-    content="
+      name="description"
+      content="
   Malawian Delicacies represents the rich culinary heritage of Malawi, focusing on traditional recipes and cultural significance."
-  >
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,7 +37,7 @@
         <div class="navBar">
           <nav class="nav">
             <ul class="nav-list">
-              <li><a href="home.html"></a>Home</a></li>
+              <li><a href="home.html">Home</a></li>
               <li><a href="recipes.html">Recipes</a></li>
               <li><a href="ingredients.html">Ingredients</a></li>
               <li><a href="restaurants.html">Restaurants</a></li>
@@ -237,33 +237,33 @@
       <!-- GET IN TOUCH -->
       <section class="get-in-touch">
         <h2>Get In Touch</h2>
+        <!-- Form -->
+        <form action="thank-you.html" method="get">
+          <div class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email" required />
+
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              rows="4"
+              cols="50"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <input
+              type="submit"
+              class="primary-button"
+              id="submit"
+              value="Send Message"
+            />
+          </div>
+        </form>
       </section>
-      <!-- Form -->
-      <form action="thank-you.html" method="get">
-        <div class="contact-form">
-          <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Your Name" required />
-
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Your Email" required />
-
-          <label for="message">Your Message</label>
-          <textarea
-            id="message"
-            rows="4"
-            cols="50"
-            placeholder="Your Message"
-            required
-          ></textarea>
-
-          <input
-            type="submit"
-            class="primary-button"
-            id="submit"
-            value="Send Message"
-          />
-        </div>
-      </form>
     </main>
     <footer>&copy; 2025 - Malawi Delicacies. All rights reserved.</footer>
     <script src="scripts/index.js" async defer></script>
