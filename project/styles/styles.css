@@ -158,7 +158,9 @@ p {
   font-size: var(--paragraph-size);
   text-align: left;
   padding: 0.5rem 0;
+  max-width: 800px;
 }
+
 
 hr {
   border: 1px solid var(--secondary-color);

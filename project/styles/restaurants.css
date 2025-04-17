@@ -1,0 +1,264 @@
+:root {
+    /* Colors */
+    --primary-color: #477104;
+    --secondary-color: #ecb62c;
+    --tertiary-color: #f9f9f9;
+    --text-color: #333;
+    --text-color-body: rgb(114, 114, 114);
+    --background-color: #f4f4f4;
+    --background-transparent-1: rgba(51, 51, 51, 0.782);
+    --accent-color-1: #f9f9f9;
+    --accent-color-2: #cacaca;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    /* Fonts */
+    --font-family-headings: "Barlow Condensed", sans-serif;
+    --font-family-body: "Montserrat", sans-serif;
+    --paragraph-size: 12px;
+    --paragraph-small: 10px;
+    --paragraph-large: 14px;
+  
+    /* Button */
+    --button-primary: var(--secondary-color);
+    --button-secondary: var(--primary-color);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-headings);
+  color: var(--text-color);
+  margin: 0;
+}
+
+h1 {
+  font-weight: 600;
+  padding: 0.5rem;
+}
+
+h2 {
+  font-weight: 400;
+  text-align: center;
+}
+
+h4 {
+  font-weight: 500;
+  text-align: left;
+}
+
+/* Body Text */
+p, span, li, a {
+  font-family: var(--font-family-body);
+  color: var(--text-color-body);
+  font-size: var(--paragraph-size);
+  text-align: left;
+}
+
+/* RESTAURANT GRID */
+.restaurant-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* RESTAURANT CARD */
+.restaurant-card {
+  background-color: var(--accent-color-1);
+  border: 1px solid var(--accent-color-2);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  text-align: left;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.fig-element {
+  margin: 0;
+  padding: 0;
+}
+
+.fig-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid var(--accent-color-2);
+}
+
+.fig-caption {
+  padding: 15px;
+}
+
+.fig-caption h4 {
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.fig-caption p {
+  margin-bottom: 15px;
+}
+
+/* RESTAURANT META */
+.restaurant-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurant-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rating i {
+  color: var(--secondary-color);
+}
+
+/* BUTTONS */
+.restaurant-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--button-primary);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  box-shadow: var(--box-shadow);
+}
+
+.restaurant-button:hover {
+  background-color: var(--text-color);
+  color: var(--button-primary);
+}
+
+/* RESTAURANT DETAILS SECTION */
+.restaurant-details {
+  display: none;
+  padding: 30px;
+  background-color: var(--tertiary-color);
+  margin-top: 20px;
+  border: 1px solid var(--accent-color-2);
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease-in-out;
+}
+
+.restaurant-details.visible {
+  display: block;
+}
+
+.restaurant-details-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.details-image {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+}
+
+.details-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.details-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.details-text p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.details-meta {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.details-meta span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.details-meta .rating i {
+  color: var(--secondary-color);
+}
+
+/* POPULAR DISHES */
+.popular-dishes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.popular-dishes .dish {
+  text-align: center;
+  max-width: 120px;
+}
+
+.popular-dishes .dish img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+}
+
+.popular-dishes .dish p {
+  margin-top: 8px;
+  font-size: var(--paragraph-small);
+}
+
+/* CLIENT REVIEWS */
+.reviews {
+  margin-top: 20px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.reviews li {
+  margin-bottom: 10px;
+}
+
+.reviews li strong {
+  color: var(--text-color);
+}
+
+/* CONTACT INFORMATION */
+.details-text h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.details-text a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.details-text a:hover {
+  text-decoration: underline;
+}
+
+/* GOOGLE MAP */
+iframe {
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  margin-top: 20px;
+}

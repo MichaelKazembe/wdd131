@@ -1,0 +1,94 @@
+/* General Section Styling */
+
+section {
+  padding: 20px;
+  margin: 0 auto;
+
+}
+/* background Image */
+.hero-section {
+  background-image: url("/images/wide-malawi-zebras.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-color: #f9f9f9;
+}
+/* hero Content */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin-left: 70px;
+  padding: 40px;
+}
+
+p {
+    text-align: center;
+}
+
+
+
+/* Our Story Section */
+.our-story {
+  background-color: var(--accent-color-1);
+  padding: 20px;
+}
+
+.our-story .story-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.our-story img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+/* Our Mission Section */
+.our-mission {
+  background-color: var(--primary-color);
+}
+
+.our-mission p {
+  margin: 0 auto;
+  color: var(--accent-color-1);
+  text-align: center;
+}
+
+/* Our Team Section */
+.our-team {
+  background-color: #f9f9f9;
+}
+
+.our-team .team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.our-team .team-member {
+  text-align: center;
+  max-width: 200px;
+}
+
+.our-team .team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.our-team .team-member h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.our-team .team-member p {
+  color: var(--text-color);
+}

@@ -1,47 +1,17 @@
-/* ------------------ ABOUT US SECTION --------------------*/
-
-.about-us {
-  background-color: var(--secondary-color);
-  padding: 20px 60px;
-  text-align: center;
-}
-
-.about-us-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 20px;
-}
-
-.about-us > h3 {
-  font-size: var(--heading-size);
-  color: var(--text-color);
-  text-align: center;
-  color: var(--accent-color-1);
-}
-
-
-.about-us-text {
-  font-size: var(--paragraph-size);
-  color: var(--primary-color);
-  font-weight: 600;
-  font-size: larg;
-  text-align: center;
-  padding: 0 20px;
-  margin: 20px;
-}
 
 /* ------------------ GET IN TOUCH SECTION --------------------*/
 
 /*  */
 .get-in-touch-contact {
   padding: 20px;
-}
-
-.get-in-touch-contact > p {
   text-align: center;
 }
+
+.contact-description {
+  text-align: center;
+}
+
+
 
 .contact-container {
   display: flex;

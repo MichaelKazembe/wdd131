@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Malawi Delicacies</title>
+    <meta
+      name="description"
+      content="
+  Malawian Delicacies represents the rich culinary heritage of Malawi, focusing on traditional recipes and cultural significance."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/logo/logo-favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navigation">
+        <!-- logo -->
+        <div class="logo">
+          <img src="images/logo/logo-transparent.png" alt="logo" width="150" />
+        </div>
+
+        <!-- Hamburger + Close icons -->
+        <div>
+          <a
+            href="javascript:void(0);"
+            class="icon"
+            onclick="toggleMenu()"
+            id="menuToggleIcon"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+
+        <!-- NavBar -->
+        <div class="navBar" id="myNavBar">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="recipes.html">Recipes</a></li>
+              <li><a href="restaurants.html" class="active">Restaurants</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Discover Local Restaurants</h1>
+            <p>
+              Explore the best restaurants in Malawi offering authentic
+              Malawian cuisine and a taste of tradition.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESTAURANTS SECTION -->
+      <section class="local-restaurants">
+        <h2>Local Restaurants</h2>
+        <hr />
+        <div class="restaurant-grid">
+          <!-- Restaurants will be dynamically inserted here -->
+        </div>
+      </section>
+        <!-- RESTAURANT DETAILS SECTION -->
+        <section class="restaurant-details">
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo Section -->
+        <div class="footer-logo">
+          <img
+            src="images/logo/logo-transparent.png"
+            alt="Malawi Delicacies Logo"
+            width="150"
+          />
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <ul class="social-links">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Subscribe Form -->
+        <div class="footer-subscribe">
+          <h4>Subscribe to Our Newsletter</h4>
+          <form action="#" method="post" class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit" class="primary-button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="footer-copyright">
+        &copy;
+        <span id="current-year"></span>
+        Malawi Delicacies. All rights reserved.
+      </div>
+    </footer>
+    <script src="scripts/index.js" async defer></script>
+    <script src="scripts/restaurants.js" async defer></script>
+  </body>
+</html>
