@@ -138,7 +138,13 @@
               />
               <label for="subject">Subject</label>
               <select id="subject" name="subject" required>
-                <option value="" disabled selected>General Inquiry</option>
+                <option value="" disabled selected>Select a Subject</option>
+                <option value="general-inquiry">General Inquiry</option>
+                <option value="recipe-question">Recipe Question</option>
+                <option value="restaurant-recommendation">Restaurant Recommendation</option>
+                <option value="feedback">Feedback</option>
+                <option value="collaboration">Collaboration Opportunity</option>
+                <option value="other">Other</option>
               </select>
 
               <label for="message">Your Message</label>
@@ -161,7 +167,6 @@
         </div>
       </section>
     </main>
-    
     <footer class="footer">
       <div class="footer-container">
         <!-- Logo Section -->
@@ -195,7 +200,7 @@
         <!-- Subscribe Form -->
         <div class="footer-subscribe">
           <h4>Subscribe to Our Newsletter</h4>
-          <form action="#" method="post" class="subscribe-form">
+          <form action="thank-you.html" method="post" class="subscribe-form">
             <input type="email" placeholder="Enter your email" required />
             <button type="submit" class="primary-button">Subscribe</button>
           </form>
@@ -209,7 +214,7 @@
         Malawi Delicacies. All rights reserved.
       </div>
     </footer>
-    <script src="scripts/index.js" async defer></script>
+    <script src="scripts/contact.js" async defer></script>
     <script src="scripts/index.js" async defer></script>
   </body>
 </html>

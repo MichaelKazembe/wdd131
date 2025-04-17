@@ -21,17 +21,17 @@ const popularDishes = [
   {
     name: "Nsima",
     description: "A staple food made from maize flour, similar to polenta.",
-    imageUrl: "../../images/maceio-brazil-temple.jpg",
+    imageUrl: "../images/Nsima-1_optimized_.webp",
   },
   {
     name: "Chambo",
     description: "A popular fish dish, often grilled or fried.",
-    imageUrl: "../../images/maceio-brazil-temple.jpg",
+    imageUrl: "../images/chambo-fish-1_optimized_.webp",
   },
   {
     name: "Kachumbari",
     description: "A fresh salad made with tomatoes, onions, and chili peppers.",
-    imageUrl: "../../images/maceio-brazil-temple.jpg",
+    imageUrl: "../images/Kachumbari-1_optimized_.webp",
   },
 ];
 
@@ -63,7 +63,7 @@ const essentialIngredients = [
   {
     name: "Maize Flour",
     description: "The primary ingredient for making Nsima.",
-    imageUrl: "../../images/maceio-brazil-temple.jpg",
+    imageUrl: "../images/maize-flour-1_optimized_.webp",
   },
   {
     name: "Fish",

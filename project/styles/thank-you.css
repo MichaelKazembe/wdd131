@@ -1,0 +1,49 @@
+/* Thank You Section */
+.thank-you-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  background-color: var(--tertiary-color);
+  padding: 20px;
+}
+
+.thank-you-content {
+  max-width: 600px;
+  background-color: var(--accent-color-1);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+}
+
+.thank-you-content h1 {
+  font-family: var(--font-family-headings);
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.thank-you-content p {
+  font-family: var(--font-family-body);
+  font-size: var(--paragraph-size);
+  color: var(--text-color-body);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.primary-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--button-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: var(--paragraph-size);
+  transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {
+  background-color: var(--text-color);
+  color: var(--button-primary);
+}
