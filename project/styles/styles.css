@@ -315,7 +315,7 @@ li a.active {
 
 /* background Image */
 .hero-section {
-  background-image: url("/images/wide-malawi-zebras.webp");
+  background-image: url("/project/images/hero-cover-home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
@@ -334,13 +334,13 @@ li a.active {
 
 /* hero Text */
 .hero-text > h1 {
-  color: var(--text-color);
+  color: rgb(255, 255, 255);
   font-size: 2.5rem;
   text-align: center;
 }
 
 .hero-text > p {
-  color: var(--text-color);
+  color: rgb(255, 255, 255);
   font-size: var(--paragraph-large);
   text-align: center;
   /* margin: 20px 0; */
