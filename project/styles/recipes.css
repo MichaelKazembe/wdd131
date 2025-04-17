@@ -1,0 +1,73 @@
+/* SEARCH */
+
+.search-filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+    margin: 0 auto;
+  padding: 2rem;
+}
+
+.search-bar-container {
+  display: flex;
+  width: 600px;
+
+}
+
+.search-button {
+  background-color: var(--accent-color-1);
+  color: var(--primary-dark);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.search-button:hover {
+  background-color: var(--accent-color-2);
+  color: var(--primary-color);
+}
+
+/* FILTERS */
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* gap: 1rem; */
+}
+
+select {
+  color: var(--primary-dark);
+  border: none;
+  cursor: pointer;
+  width: 400px;
+ 
+}
+
+/* Input Fields */
+.search-bar-container input[type="text"],
+.filter-container select {
+  width: 100%;
+  padding: 10px;
+  font-family: var(--font-family-body);
+  font-size: var(--paragraph-size);
+  border: 1px solid var(--accent-color-2);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0 20px;
+}
+
+/* RECIPE GRID */
+.duration-serving {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    color: var(--primary-color);
+  }
+
+figure {
+  margin-bottom: 1rem;
+}
+

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Malawi Delicacies</title>
+    <title>Malawi Delicacies | Contact</title>
     <meta
       name="description"
       content="
@@ -34,33 +34,76 @@
         <div class="logo">
           <img src="images/logo/logo-transparent.png" alt="logo" width="150" />
         </div>
+
+        <!-- Hamburger + Close icons -->
+        <div>
+          <a
+            href="javascript:void(0);"
+            class="icon"
+            onclick="toggleMenu()"
+            id="menuToggleIcon"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+
         <!-- NavBar -->
-        <div class="navBar">
+        <div class="navBar" id="myNavBar">
           <nav class="nav">
             <ul class="nav-list">
               <li><a href="index.html">Home</a></li>
               <li><a href="recipes.html">Recipes</a></li>
               <li><a href="ingredients.html">Ingredients</a></li>
               <li><a href="restaurants.html">Restaurants</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
+
     <main>
       <!-- HERO SECTION -->
       <section class="hero-section">
         <div class="hero-content">
           <div class="hero-text">
             <h1>Contact Us</h1>
+            <p>
+              Whether you're looking for traditional recipes, need help with
+              ingredients, or just want to connect, feel free to reach out. Our
+              team is here to assist you!
+            </p>
           </div>
         </div>
       </section>
 
+      <!-- ABOUT US -->
+      <section class="about-us">
+        <h2>About Us</h2>
+        <div class="about-us-content">
+          <p class="about-us-text">
+            At Malawi Delicacies, we are passionate about sharing the rich
+            culinary heritage of Malawi.
+          </p>
+          <p class="about-us-text">
+            Our mission is to provide you with
+            authentic recipes, cooking tips, and insights into the vibrant food
+            culture of Malawi.
+          </p>
+     
+          <p class="about-us-text">
+            We believe that food is a universal language that brings people
+            together. Join us on this delicious journey and discover the flavors
+            of Malawi!
+          </p>
+        </div>
+  
+        </section>  
+
       <!-- GET IN TOUCH -->
       <section class="get-in-touch-contact">
         <h2>Get In Touch</h2>
+        <hr>
         <p>
           Have questions about Malawian cuisine? Want to share your favorite
           recipe? We'd love to hear from you!
@@ -83,6 +126,7 @@
                 hello@malawidelicacies.com
               </p>
             </div>
+            <!-- follow -->
             <div class="follow">
               <h4>Follow Us</h4>
               <div class="social-media">
@@ -95,6 +139,8 @@
                 <a href="https://www.twitter.com" target="_blank">
                   <i class="fab fa-twitter"></i>
                 </a>
+                <a href="https://www.youtube.com" target="_blank">
+                  <i class="fab fa-youtube"></i>
               </div>
             </div>
           </div>
@@ -136,7 +182,54 @@
         </div>
       </section>
     </main>
-    <footer>&copy; 2025 - Malawi Delicacies. All rights reserved.</footer>
+    
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo Section -->
+        <div class="footer-logo">
+          <img
+            src="images/logo/logo-transparent.png"
+            alt="Malawi Delicacies Logo"
+            width="150"
+          />
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <ul class="social-links">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Subscribe Form -->
+        <div class="footer-subscribe">
+          <h4>Subscribe to Our Newsletter</h4>
+          <form action="#" method="post" class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit" class="primary-button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="footer-copyright">
+        &copy;
+        <span id="current-year"></span>
+        Malawi Delicacies. All rights reserved.
+      </div>
+    </footer>
     <script src="scripts/index.js" async defer></script>
   </body>
 </html>

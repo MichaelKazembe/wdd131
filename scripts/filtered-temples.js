@@ -175,7 +175,7 @@ function displayTemples(temples) {
 }
 
 // Display all temples by default
-displayTemples(temples);
+T
 
 
 // Filter Temples

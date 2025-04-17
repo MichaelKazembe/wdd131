@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Malawi Delicacies | Recipes</title>
+    <meta
+      name="description"
+      content="
+  Malawian Delicacies represents the rich culinary heritage of Malawi, focusing on traditional recipes and cultural significance."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/recipes.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navigation">
+        <!-- logo -->
+        <div class="logo">
+          <img src="images/logo/logo-transparent.png" alt="logo" width="150" />
+        </div>
+        <!-- NavBar -->
+        <div class="navBar" id="myNavBar">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="recipes.html" class="active">Recipes</a></li>
+              <li><a href="ingredients.html">Ingredients</a></li>
+              <li><a href="restaurants.html">Restaurants</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Authentic Malawian Recipes</h1>
+            <p>
+              Explore our collection of traditional dishes passed down through
+              generations. From hearty nsima to refreshing thobwa, experience
+              the rich flavors of Malawi.
+            </p>
+          </div>
+          <!-- Buttons -->
+          <div class="hero-buttons">
+            <button class="primary-button">Start Cooking</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- POPULAR RECIPES -->
+      <section class="popular-recipes">
+        <h2>Popular Recipes</h2>
+        <div class="search-filter">
+          <div class="search-bar-container">
+            <input
+              type="text"
+              placeholder="Search for recipes..."
+              class="search-bar"
+            />
+            <button class="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="filter-container">
+            <select name="categories" id="categories">
+              <option value="" disabled selected>All Categories</option>
+              <option value="nsima">Nsima</option>
+              <option value="thobwa">Thobwa</option>
+              <option value="chambo">Chambo</option>
+              <option value="kondowole">Kondowole</option>
+              <option value="chikanda">Chikanda</option>
+              <option value="katapa">Katapa</option>
+            </select>
+            <select name="Cooking time" id="cooking-time">
+              <option value="" disabled selected>Cooking Times</option>
+              <option value="15">15 Mins</option>
+              <option value="30">30 Mins</option>
+              <option value="45">45 Mins</option>
+              <option value="60">60 Mins</option>
+              <option value="90">90 Mins</option>
+            </select>
+            <select name="serving" id="serving">
+              <option value="" disabled selected>Serving</option>
+              <option value="1">1 Serving</option>
+              <option value="2">2 Servings</option>
+              <option value="4">4 Servings</option>
+              <option value="6">6 Servings</option>
+              <option value="8">8 Servings</option>
+            </select>
+          </div>
+        </div>
+        <div class="recipe-grid">
+          <div>
+            <figure class="fig-element">
+              <img
+                src="../images/maceio-brazil-temple.jpg"
+                alt="Maceio-Brazil-Temple"
+                class="fig-image"
+              />
+              <figcaption class="fig-caption">
+                <h4>Nsima With Chambo</h4>
+                <div class="duration-serving">
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    45 Mins
+                  </p>
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    4 Servings
+                  </p>
+                </div>
+                <p>
+                  Traditional Malawian staple made from maize flour, served with
+                  fresh Chambo fish
+                </p>
+                <button class="secondary-button recipe-button">
+                  View Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure class="fig-element">
+              <img
+                src="../images/maceio-brazil-temple.jpg"
+                alt="Maceio-Brazil-Temple"
+                class="fig-image"
+              />
+              <figcaption class="fig-caption">
+                <h4>Nsima With Chambo</h4>
+                <div class="duration-serving">
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    45 Mins
+                  </p>
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    4 Servings
+                  </p>
+                </div>
+                <p>
+                  Traditional Malawian staple made from maize flour, served with
+                  fresh Chambo fish
+                </p>
+                <button class="secondary-button recipe-button">
+                  View Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure class="fig-element">
+              <img
+                src="../images/maceio-brazil-temple.jpg"
+                alt="Maceio-Brazil-Temple"
+                class="fig-image"
+              />
+              <figcaption class="fig-caption">
+                <h4>Nsima With Chambo</h4>
+                <div class="duration-serving">
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    45 Mins
+                  </p>
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    4 Servings
+                  </p>
+                </div>
+                <p>
+                  Traditional Malawian staple made from maize flour, served with
+                  fresh Chambo fish
+                </p>
+                <button class="secondary-button recipe-button">
+                  View Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure class="fig-element">
+              <img
+                src="../images/maceio-brazil-temple.jpg"
+                alt="Maceio-Brazil-Temple"
+                class="fig-image"
+              />
+              <figcaption class="fig-caption">
+                <h4>Nsima With Chambo</h4>
+                <div class="duration-serving">
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    45 Mins
+                  </p>
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    4 Servings
+                  </p>
+                </div>
+                <p>
+                  Traditional Malawian staple made from maize flour, served with
+                  fresh Chambo fish
+                </p>
+                <button class="secondary-button recipe-button">
+                  View Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure class="fig-element">
+              <img
+                src="../images/maceio-brazil-temple.jpg"
+                alt="Maceio-Brazil-Temple"
+                class="fig-image"
+              />
+              <figcaption class="fig-caption">
+                <h4>Nsima With Chambo</h4>
+                <div class="duration-serving">
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    45 Mins
+                  </p>
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    4 Servings
+                  </p>
+                </div>
+                <p>
+                  Traditional Malawian staple made from maize flour, served with
+                  fresh Chambo fish
+                </p>
+                <button class="secondary-button recipe-button">
+                  View Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure class="fig-element">
+              <img
+                src="../images/maceio-brazil-temple.jpg"
+                alt="Maceio-Brazil-Temple"
+                class="fig-image"
+              />
+              <figcaption class="fig-caption">
+                <h4>Nsima With Chambo</h4>
+                <div class="duration-serving">
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    45 Mins
+                  </p>
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    4 Servings
+                  </p>
+                </div>
+                <p>
+                  Traditional Malawian staple made from maize flour, served with
+                  fresh Chambo fish
+                </p>
+                <button class="secondary-button recipe-button">
+                  View Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div> 
+          <div>
+            <figure class="fig-element">
+              <img
+                src="../images/maceio-brazil-temple.jpg"
+                alt="Maceio-Brazil-Temple"
+                class="fig-image"
+              />
+              <figcaption class="fig-caption">
+                <h4>Nsima With Chambo</h4>
+                <div class="duration-serving">
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    45 Mins
+                  </p>
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    4 Servings
+                  </p>
+                </div>
+                <p>
+                  Traditional Malawian staple made from maize flour, served with
+                  fresh Chambo fish
+                </p>
+                <button class="secondary-button recipe-button">
+                  View Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure class="fig-element">
+              <img
+                src="../images/maceio-brazil-temple.jpg"
+                alt="Maceio-Brazil-Temple"
+                class="fig-image"
+              />
+              <figcaption class="fig-caption">
+                <h4>Nsima With Chambo</h4>
+                <div class="duration-serving">
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    45 Mins
+                  </p>
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    4 Servings
+                  </p>
+                </div>
+                <p>
+                  Traditional Malawian staple made from maize flour, served with
+                  fresh Chambo fish
+                </p>
+                <button class="secondary-button recipe-button">
+                  View Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>&copy; 2025 - Malawi Delicacies. All rights reserved.</footer>
+    <script src="scripts/index.js" async defer></script>
+  </body>
+</html>
