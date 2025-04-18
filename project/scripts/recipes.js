@@ -1,4 +1,20 @@
-// Array of recipes
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+
+function toggleMenu() {
+  const nav = document.getElementById("myNavBar");
+  const icon = document.getElementById("menuToggleIcon").querySelector("i");
+
+  nav.classList.toggle("active");
+
+  if (nav.classList.contains("active")) {
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-times");
+  } else {
+    icon.classList.remove("fa-times");
+    icon.classList.add("fa-bars");
+  }
+}
+
 // Array of recipes
 const recipes = [
   {
