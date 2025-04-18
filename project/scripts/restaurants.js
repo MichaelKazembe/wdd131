@@ -108,10 +108,10 @@ function displayRestaurants(restaurants) {
             <h4>${restaurant.name}</h4>
             <p>${restaurant.description}</p>
             <div class="restaurant-meta">
-              <span><i class="fas fa-map-marker-alt"></i> ${restaurant.location}</span>
-              <span class="rating">
+              <p><i class="fas fa-map-marker-alt"></i> ${restaurant.location}</p>
+              <p class="rating">
                 ${generateStarRating(restaurant.rating)}
-              </span>
+              </p>
             </div>
             <button class="secondary-button view-details-button">View Details</button>
           </figcaption>
