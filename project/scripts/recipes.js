@@ -105,8 +105,8 @@ function renderRecipes(recipes) {
           <div class="recipe-meta">
             <p><i class="fas fa-clock"></i> ${recipe.duration}</p>
             <p><i class="fas fa-users"></i> ${recipe.servings}</p>
-          </div>
-           <p class="rating">${generateStarRating(recipe.rating)}</p>
+            <p class="rating">${generateStarRating(recipe.rating)}</p>
+          </div>  
           <button class="secondary-button view-details-button">View Details</button>
         </figcaption>
       </figure>

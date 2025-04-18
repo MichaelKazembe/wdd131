@@ -1,14 +1,25 @@
+.hero-section-recipe {
+  background-image: url("/project/images/Nzombe.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-color: var(--text-color-body);
 
+}
+
+.hero-section-recipe h1,
+.hero-section-recipe p {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
 
 /* Recipe Details Section */
 .recipe-details {
   display: none;
-  padding: 30px;
-  background-color: var(--tertiary-color);
-  margin-top: 20px;
-  border: 1px solid var(--accent-color-2);
-  border-radius: 12px;
-  box-shadow: var(--box-shadow);
+  padding: 4rem;
+  background-color: var(--primary-color);
+  margin-top: 2rem;
   transition: all 0.3s ease-in-out;
 }
 
@@ -18,13 +29,16 @@
 
 .recipe-details-content {
   display: flex;
-  flex-wrap: nowrap; 
+  flex-wrap: wrap;
+  flex-direction: row; 
   gap: 30px;
   align-items: flex-start;
+  justify-content: center;
 }
 
 .details-image {
-  max-width: 300px; 
+  width: auto; 
+  height: 300px;
   border-radius: 12px;
   box-shadow: var(--box-shadow);
   object-fit: cover; 
@@ -33,49 +47,51 @@
 .details-text {
   flex: 1; 
   max-width: 600px;
+  color:white;
+
 }
 
-.details-text h2 {
-  font-size: 2rem;
+.details-text h2,
+.details-text h4 {
   margin-bottom: 15px;
-  color: var(--text-color);
+  color: var(--secondary-color);
+  text-align: left;
 }
 
 .details-text p {
-  font-size: var(--paragraph-size);
-  line-height: 1.6;
-  color: var(--text-color-body);
-  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+  
 }
 
 .recipe-meta {
   display: flex;
   flex-direction: row;
   gap: 15px;
-  color: var(--text-color);
   margin-bottom: 20px;
+
+  
 }
 
-.rating {
+.rating,
+.recipe-meta .rating {
   color: var(--secondary-color);
 }
+
 
 /* Ingredients List */
 .ingredients-list {
   list-style: disc;
   margin: 10px 0;
   padding-left: 20px;
-  color: var(--text-color-body);
-  font-size: var(--paragraph-size);
 }
 
 /* Preparation Steps */
 .preparation-steps {
-  list-style: decimal; 
+  /* list-style: decimal;  */
   margin: 10px 0;
   padding-left: 20px;
-  color: var(--text-color-body);
-  font-size: var(--paragraph-size);
+  /* color: var(--text-color-body); */
+  /* font-size: var(--paragraph-size); */
 }
 
 .ingredients-list li,
@@ -83,6 +99,9 @@
   margin-bottom: 10px; 
 }
 
-li::before {
-  content: ""; 
+.ingredients-list > li::before,
+.preparation-steps > li::before {
+  content: "• "; 
+  font-size: 1.75em; 
+  color: var(--secondary-color); 
 }

@@ -319,7 +319,7 @@ li a.active {
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
-  background-color: #f9f9f9;
+  background-color: var(--text-color-body);
 }
 /* hero Content */
 .hero-content {
