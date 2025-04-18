@@ -614,7 +614,7 @@ figure {
 
 .subscribe-form input {
   padding: 5px;
-  font-size: var(--text-color-body);
+  font-size: var(--paragraph-size);
   border: none;
   border-radius: 5px;
   flex: 1;
