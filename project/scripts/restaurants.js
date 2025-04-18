@@ -3,7 +3,7 @@ const restaurants = [
   {
     id: "restaurant-1",
     name: "Chambo Delight",
-    image: "/project/images/chambo-fish-2.jpeg",
+    image: "images/chambo-fish-2.jpeg",
     description: "Specializes in fresh Chambo dishes and traditional Malawian sides.",
     location: "Lilongwe, Malawi",
     rating: 4.5,
@@ -26,7 +26,7 @@ const restaurants = [
   {
     id: "restaurant-2",
     name: "Nsima Haven",
-    image: "/project/images/Nsima-1.jpeg",
+    image: "images/Nsima-1.jpeg",
     description: "A cozy spot offering the best nsima and ndiwo combinations.",
     location: "Blantyre, Malawi",
     rating: 3.8,
@@ -49,7 +49,7 @@ const restaurants = [
   {
     id: "restaurant-3",
     name: "Thobwa Treats",
-    image: "/project/images/thobwa-2.jpeg",
+    image: "images/thobwa-2.jpeg",
     description: "Known for its refreshing thobwa and sweet Malawian snacks.",
     location: "Mzuzu, Malawi",
     rating: 4.2,
@@ -72,7 +72,7 @@ const restaurants = [
   {
     id: "restaurant-4",
     name: "Mandasi Corner",
-    image: "/project/images/mandasi-2.jpeg",
+    image: "images/mandasi-2.jpeg",
     description: "Perfect for breakfast with freshly made mandasi and tea.",
     location: "Zomba, Malawi",
     rating: 4.0,

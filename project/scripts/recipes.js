@@ -20,7 +20,7 @@ const recipes = [
   {
     id: "recipe-1",
     name: "Nsima with Ndiwo",
-    image: "/project/images/Nsima-2.jpeg",
+    image: "images/Nsima-2.jpeg",
     description:
       "A staple Malawian dish served with a side of vegetables or meat.",
     duration: "30 minutes",
@@ -41,7 +41,7 @@ const recipes = [
   {
     id: "recipe-2",
     name: "Chambo Fish",
-    image: "/project/images/chambo-fish-3.jpeg",
+    image: "images/chambo-fish-3.jpeg",
     description: "Grilled Chambo fish, a delicacy from Lake Malawi.",
     duration: "45 minutes",
     servings: "2 servings",
@@ -64,7 +64,7 @@ const recipes = [
   {
     id: "recipe-3",
     name: "Mandasi",
-    image: "/project/images/mandasi-1.jpeg",
+    image: "images/mandasi-1.jpeg",
     description: "Sweet fried dough, perfect for breakfast or snacks.",
     duration: "20 minutes",
     servings: "6 servings",

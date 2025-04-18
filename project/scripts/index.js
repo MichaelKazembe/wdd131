@@ -21,17 +21,17 @@ const popularDishes = [
   {
     name: "Nsima",
     description: "A staple food made from maize flour, similar to polenta.",
-    imageUrl: "/project/images/Nsima-1.jpeg",
+    imageUrl: "images/Nsima-1.jpeg",
   },
   {
     name: "Chambo",
     description: "A popular fish dish, often grilled or fried.",
-    imageUrl: "/project/images/chambo-fish-1.jpeg",
+    imageUrl: "images/chambo-fish-1.jpeg",
   },
   {
     name: "Kachumbari",
     description: "A fresh salad made with tomatoes, onions, and chili peppers.",
-    imageUrl: "/project/images/Kachumbari-1.jpeg",
+    imageUrl: "images/Kachumbari-1.jpeg",
   },
 ];
 
@@ -64,22 +64,22 @@ const essentialIngredients = [
   {
     name: "Maize Flour",
     description: "The primary ingredient for making Nsima.",
-    imageUrl: "/project/images/maize-flour-2.jpg",
+    imageUrl: "images/maize-flour-2.jpg",
   },
   {
     name: "Fish",
     description: "Commonly used in various dishes, especially Chambo.",
-    imageUrl: "/project/images/chambo-fish-2.jpeg",
+    imageUrl: "images/chambo-fish-2.jpeg",
   },
   {
     name: "Tomatoes",
     description: "Used in salads and sauces.",
-    imageUrl: "/project/images/Tomatoes-1.jpg",
+    imageUrl: "images/Tomatoes-1.jpg",
   },
   {
     name: "Groundnuts",
     description: "Often used to make sauces or as a snack.",
-    imageUrl: "/project/images/ground-peanuts-1.jpg",
+    imageUrl: "images/ground-peanuts-1.jpg",
   }
 ];
 // Dynamically populate the .ingredient-grid with essential ingredients
@@ -108,21 +108,21 @@ const restaurantRecommendations = [
   {
     name: "Lilongwe Grill",
     description: "A popular spot for local Malawian cuisine.",
-    imageUrl: "project/images/maceio-brazil-temple.jpg",
+    imageUrl: "images/maceio-brazil-temple.jpg",
     rating: 4.5,
     location: "City Center, Lilongwe", // Added location property
   },
   {
     name: "Zomba Café",
     description: "Known for its beautiful views and delicious dishes.",
-    imageUrl: "project/images/maceio-brazil-temple.jpg",
+    imageUrl: "images/maceio-brazil-temple.jpg",
     rating: 4,
     location: "Zomba Plateau, Zomba", // Added location property
   },
   {
     name: "Blantyre Bistro",
     description: "Offers a mix of local and international dishes.",
-    imageUrl: "project/images/maceio-brazil-temple.jpg",
+    imageUrl: "images/maceio-brazil-temple.jpg",
     rating: 3.5,
     location: "Downtown, Blantyre", // Added location property
   },
