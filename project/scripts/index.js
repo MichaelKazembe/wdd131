@@ -21,17 +21,17 @@ const popularDishes = [
   {
     name: "Nsima",
     description: "A staple food made from maize flour, similar to polenta.",
-    imageUrl: "/project/images/Nsima-1_optimized_.webp",
+    imageUrl: "/project/images/Nsima-1.jpeg",
   },
   {
     name: "Chambo",
     description: "A popular fish dish, often grilled or fried.",
-    imageUrl: "/project/images/chambo-fish-1_optimized_.webp",
+    imageUrl: "/project/images/chambo-fish-1.jpeg",
   },
   {
     name: "Kachumbari",
     description: "A fresh salad made with tomatoes, onions, and chili peppers.",
-    imageUrl: "/project/images/Kachumbari-1_optimized_.webp",
+    imageUrl: "/project/images/Kachumbari-1.jpeg",
   },
 ];
 
@@ -63,22 +63,22 @@ const essentialIngredients = [
   {
     name: "Maize Flour",
     description: "The primary ingredient for making Nsima.",
-    imageUrl: "/project/images/maize-flour-1_optimized_.webp",
+    imageUrl: "/project/images/maize-flour-1.jpeg",
   },
   {
     name: "Fish",
     description: "Commonly used in various dishes, especially Chambo.",
-    imageUrl: "/project/images/chambo-fish-dry_optimized_.webp",
+    imageUrl: "/project/images/chambo-fish-dry.jpeg",
   },
   {
     name: "Tomatoes",
     description: "Used in salads and sauces.",
-    imageUrl: "/project/images/Tomatoes-1_optimized_.webp",
+    imageUrl: "/project/images/Tomatoes-1.jpeg",
   },
   {
     name: "Groundnuts",
     description: "Often used to make sauces or as a snack.",
-    imageUrl: "/project/images/groundnut-powder-1.webp",
+    imageUrl: "/project/images/groundnut-powder-1.jpeg",
   }
 ];
 // Dynamically populate the .ingredient-grid with essential ingredients
