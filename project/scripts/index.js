@@ -46,7 +46,8 @@ popularDishes.forEach((dish) => {
         src="${dish.imageUrl}"
         alt="${dish.name}"
         class="fig-image"
-      />
+        loading="lazy"
+      >
       <figcaption class="fig-caption">
         <h4>${dish.name}</h4>
         <p>${dish.description}</p>
@@ -63,22 +64,22 @@ const essentialIngredients = [
   {
     name: "Maize Flour",
     description: "The primary ingredient for making Nsima.",
-    imageUrl: "/project/images/maize-flour-1.jpeg",
+    imageUrl: "/project/images/maize-flour-2.jpg",
   },
   {
     name: "Fish",
     description: "Commonly used in various dishes, especially Chambo.",
-    imageUrl: "/project/images/chambo-fish-dry.jpeg",
+    imageUrl: "/project/images/chambo-fish-2.jpeg",
   },
   {
     name: "Tomatoes",
     description: "Used in salads and sauces.",
-    imageUrl: "/project/images/Tomatoes-1.jpeg",
+    imageUrl: "/project/images/Tomatoes-1.jpg",
   },
   {
     name: "Groundnuts",
     description: "Often used to make sauces or as a snack.",
-    imageUrl: "/project/images/groundnut-powder-1.jpeg",
+    imageUrl: "/project/images/ground-peanuts-1.jpg",
   }
 ];
 // Dynamically populate the .ingredient-grid with essential ingredients
@@ -91,7 +92,7 @@ essentialIngredients.forEach((ingredient) => {
         src="${ingredient.imageUrl}"
         alt="${ingredient.name}"
         class="essential-fig-image"
-      />
+        loading="lazy">
       <figcaption class="essential-fig-caption">
         <h4>${ingredient.name}</h4>
         <p>${ingredient.description}</p>
