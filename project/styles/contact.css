@@ -1,14 +1,30 @@
+.hero-section-contact {
+  background-image: url("/project/images/hero-cover-contacts.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-color: var(--text-color-body);
+}
+.hero-section-contact h1,
+.hero-section-contact p {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
 
 /* ------------------ GET IN TOUCH SECTION --------------------*/
 
 /*  */
 .get-in-touch-contact {
   padding: 20px;
-  text-align: center;
+
 }
 
 .contact-description {
   text-align: center;
+  margin: 20px auto;
+  color: var(--text-color);
 }
 
 
