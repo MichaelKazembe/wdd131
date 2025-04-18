@@ -1,56 +1,15 @@
-:root {
-    /* Colors */
-    --primary-color: #477104;
-    --secondary-color: #ecb62c;
-    --tertiary-color: #f9f9f9;
-    --text-color: #333;
-    --text-color-body: rgb(114, 114, 114);
-    --background-color: #f4f4f4;
-    --background-transparent-1: rgba(51, 51, 51, 0.782);
-    --accent-color-1: #f9f9f9;
-    --accent-color-2: #cacaca;
-    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
-    /* Fonts */
-    --font-family-headings: "Barlow Condensed", sans-serif;
-    --font-family-body: "Montserrat", sans-serif;
-    --paragraph-size: 12px;
-    --paragraph-small: 10px;
-    --paragraph-large: 14px;
-  
-    /* Button */
-    --button-primary: var(--secondary-color);
-    --button-secondary: var(--primary-color);
+.hero-section-restaurants {
+  background-image: url("/project/images/women-cooking-nsima.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-color: var(--text-color-body);
 }
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family-headings);
-  color: var(--text-color);
-  margin: 0;
-}
-
-h1 {
-  font-weight: 600;
-  padding: 0.5rem;
-}
-
-h2 {
-  font-weight: 400;
-  text-align: center;
-}
-
-h4 {
-  font-weight: 500;
-  text-align: left;
-}
-
-/* Body Text */
-p, span, li, a {
-  font-family: var(--font-family-body);
-  color: var(--text-color-body);
-  font-size: var(--paragraph-size);
-  text-align: left;
+.hero-section-restaurants h1,
+.hero-section-restaurants p {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* RESTAURANT GRID */
