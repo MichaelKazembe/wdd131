@@ -1,5 +1,3 @@
-
-
 /* RECIPE GRID */
 .recipe-grid {
   display: flex;
@@ -75,21 +73,20 @@
 
 .recipe-details-content {
   display: flex;
-  flex-wrap: nowrap; /* Ensure the image and text stay side by side */
+  flex-wrap: nowrap; 
   gap: 30px;
   align-items: flex-start;
 }
 
 .details-image {
-  max-width: 300px; /* Adjust the image width */
-  width: 100%;
+  max-width: 300px; 
   border-radius: 12px;
   box-shadow: var(--box-shadow);
-  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+  object-fit: cover; 
 }
 
 .details-text {
-  flex: 1; /* Allow the text to take up remaining space */
+  flex: 1; 
   max-width: 600px;
 }
 
@@ -129,7 +126,7 @@
 
 /* Preparation Steps */
 .preparation-steps {
-  list-style: decimal; /* Ensure steps are numbered */
+  list-style: decimal; 
   margin: 10px 0;
   padding-left: 20px;
   color: var(--text-color-body);
@@ -138,9 +135,9 @@
 
 .ingredients-list li,
 .preparation-steps li {
-  margin-bottom: 10px; /* Add spacing between list items */
+  margin-bottom: 10px; 
 }
 
 li::before {
-  content: ""; /* Remove the bullet point for numbered steps */
+  content: ""; 
 }
