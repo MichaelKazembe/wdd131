@@ -315,7 +315,7 @@ li a.active {
 
 /* background Image */
 .hero-section {
-  background-image: url("/project/images/hero-cover-home.webp");
+  background-image: url("/project/images/hero-cover-home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
