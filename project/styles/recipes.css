@@ -12,6 +12,7 @@
 .hero-section-recipe p {
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
 }
 
 /* Recipe Details Section */

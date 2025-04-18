@@ -161,7 +161,6 @@ p {
   max-width: 800px;
 }
 
-
 hr {
   border: 1px solid var(--secondary-color);
   width: 5%;
@@ -184,7 +183,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 70px;
-  height: 70px; 
+  height: 70px;
 }
 
 /* NavBar */
@@ -334,16 +333,17 @@ li a.active {
 
 /* hero Text */
 .hero-text > h1 {
-  color: rgb(255, 255, 255);
   font-size: 2.5rem;
-  text-align: center;
 }
 
 .hero-text > p {
-  color: rgb(255, 255, 255);
   font-size: var(--paragraph-large);
+}
+.hero-section h1,
+.hero-section p {
+  color: white;
   text-align: center;
-  /* margin: 20px 0; */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* ------------------ POPULAR RECIPES SECTION --------------------*/
